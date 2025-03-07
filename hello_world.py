@@ -23,11 +23,7 @@ def hello_world():
 # This is a minimal DAG definition
 dag = DAG(
     "hello_world",  # This is the ID of the DAG
-    default_args={
-        "start_date": datetime(
-            2025, 1, 1
-        ),  # This is the start date of the DAG
-    },
+    start_date=datetime(2025, 1, 1),  # This is the start date of the DAG
     schedule=None,
     catchup=False,
 )
